@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { TMenuLeft } from "@/types";
 export const Wrapper = styled.div<TMenuLeft>`
+display: none;
+
+@media only screen and (max-width:1024px){
+
   position: absolute;
   height: 100%;
   width: 100%;
   display: ${({ visibleMenuLeftMobile }) =>
-    visibleMenuLeftMobile ? "flex" : "none"};
+  visibleMenuLeftMobile ? "flex" : "none"};
   background-color: #82008271;
   z-index: 1;
-
+  animation: 3s linear 1s infinite running slidein;
+  
   .ContentMenuMobile {
     padding: 5rem 1rem;
     width: 72%;
@@ -45,5 +50,19 @@ export const Wrapper = styled.div<TMenuLeft>`
         cursor: pointer;
       }
     }
+
+    .textMenuMobile:hover{
+      cursor: pointer;
+      h2{
+        /* color: #570b9f; */
+        color: #FF00FF;
+      }
+      svg{
+        fill: 	#A020F0;
+      }
+     
+    }
   }
-`;
+}
+  `;
+  

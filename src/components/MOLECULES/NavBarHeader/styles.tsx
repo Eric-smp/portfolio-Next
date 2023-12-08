@@ -11,7 +11,8 @@ h1{
     transform: 1s;
 }
 h1:hover{
-    color:#e80560 ;
+    color:#FF00FF ;
+    cursor: pointer;
 }
 
 

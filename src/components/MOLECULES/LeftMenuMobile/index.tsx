@@ -1,9 +1,11 @@
 import { useGlobal } from "@/hooks/context/global";
 import ArrowLeft from "@/assets/svg/arrowRigthMenu.svg";
 import IconClose from "@/assets/svg/closeModal.svg";
+import {useRouter} from 'next/router'
 import * as Styles from "./styles";
 
 export function LeftMenuMobile() {
+  const router = useRouter()
   const { visibleMenuMobile, setVisibleMenuMobile } = useGlobal();
   return (
     <Styles.Wrapper visibleMenuLeftMobile={visibleMenuMobile}>
@@ -14,7 +16,19 @@ export function LeftMenuMobile() {
         </div>
 
         <div className="textMenuMobile">
-          <h2>Sobre mim</h2>
+          <h2 onClick={()=> {
+            router.push('/')
+            setVisibleMenuMobile(false)
+          }}>Inicio</h2>
+          <span>
+            <ArrowLeft />
+          </span>
+        </div>
+        <div className="textMenuMobile">
+          <h2 onClick={()=>{
+            router.push('/aboutMe')
+            setVisibleMenuMobile(false)
+          }}>Sobre mim</h2>
           <span>
             <ArrowLeft />
           </span>

@@ -7,14 +7,20 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: #331d4a; */
+  background-color: #af74e7a4;
   gap: 1rem;
   .nameEndLogo {
     display: flex;
     h1 {
       color: #e4f3d8;
     }
-
+    
+    :hover{
+      background-image: linear-gradient( 40deg, 	#570b9f, #FF00FF);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
   }
   .menuHeaderMobile{
     display: none;

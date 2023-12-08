@@ -15,8 +15,15 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@colors/*": ["./src/colors/*"],
+      "@common/*": ["./src/common/*"],
       "@components/*": ["./src/components/*"],
+      "@images/*": ["./src/images/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@pages/*": ["./src/pages/*"],
+      "@services/*": ["./src/services/*"],
+      "@styles/*": ["./src/styles/*"],
       "@types/*": ["./src/types/*"]
     }
   },

@@ -12,7 +12,7 @@ export const Wrapper = styled.div<TMenuLeft>`
   .ContentMenuMobile {
     padding: 5rem 1rem;
     width: 72%;
-    background-color: #820081;
+    background-color: #832883;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -33,13 +33,16 @@ export const Wrapper = styled.div<TMenuLeft>`
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-
+      
       h2 {
+        font-weight: 300;
         color: #e4f3d8;
         font-size: 1.35rem;
+        cursor: pointer;
       }
-      svg{
-        fill:#e4f3d8;
+      svg {
+        fill: #e4f3d8;
+        cursor: pointer;
       }
     }
   }

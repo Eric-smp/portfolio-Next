@@ -4,14 +4,14 @@ export function BodyHome(){
     return(
         <Styles.Wrapper>
             <div className='titleBody'>
-                <span>sobre mim</span>
+                <h1>Inicio</h1>
             </div>
             <div className='diviser'>
                 <span></span>
             </div>
 
             <div className='contentBody'>
-                <h1>Sobre mimmmmm</h1>
+                <h2>Olá me chamo Eric Sampaio, criei esse portifolio para me apresentar e mostrar os meus trabalhos e meus projeto desenvolvidos que fiz tanto sozinho como com colegas de faculdade</h2>
             </div>
         </Styles.Wrapper>
     )

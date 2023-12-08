@@ -1,8 +1,7 @@
 import IconMenuHeader from '@/assets/svg/openMenuMobile.svg'
 import { NavBarHeader, LeftMenuMobile } from "@/components";
-import * as Styles from "./styles";
 import { useGlobal } from '@/hooks/context/global';
-
+import * as Styles from "./styles";
 export function Header() {
   const {setVisibleMenuMobile} = useGlobal()
   return (
@@ -16,6 +15,8 @@ export function Header() {
       <div className="nameEndLogo">
         <h1>Portifolio</h1>
       </div>
+      
+      
 
 
     </Styles.Content>

@@ -7,7 +7,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #331d4a;
+  /* background-color: #331d4a; */
   gap: 1rem;
   .nameEndLogo {
     display: flex;
@@ -34,3 +34,10 @@ export const Content = styled.div`
     }
   }
 `;
+
+
+
+export const VisibleMenu = styled.div`
+position: absolute;
+z-index: 10;
+`

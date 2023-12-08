@@ -34,13 +34,19 @@ export function LeftMenuMobile() {
           </span>
         </div>
         <div className="textMenuMobile">
-          <h2>Desenvolvimentos</h2>
+          <h2 onClick={()=> {
+            router.push('/developments')
+            setVisibleMenuMobile(false)
+          }}>Desenvolvimentos</h2>
           <span>
             <ArrowLeft />
           </span>
         </div>
         <div className="textMenuMobile">
-          <h2>Contatos</h2>
+          <h2 onClick={()=>{
+            router.push('/contacts')
+            setVisibleMenuMobile(false)
+          }}>Contatos</h2>
           <span>
             <ArrowLeft />
           </span>
